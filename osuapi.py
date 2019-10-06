@@ -50,7 +50,7 @@ supported_args = {
 	'replay': {'m', 'b', 'u', 'type', 'mods'}
 }
 
-def url(key, part, **kwargs):
+def url(part, key, **kwargs):
 	if part not in supported_args:
 		raise ValueError('Incorrect API part')
 	url = base.format(part, key)
